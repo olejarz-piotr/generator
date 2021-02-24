@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Generator</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        .topBar {
+            top: 0px;
+            height: 35px;
+            width: 100vw;
+            background: grey;
+            position: fixed;
+        }
+
+        .btn {
+            position: relative;
+            top: 0px;
+            right: 200px;
+            margin-top: 2px;
+            float: right;
+            margin-inline: 5px;
+        }
+
+        .rightBar {
+            
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        height: 500px;
+        width: 500px;
+              
+
+        }
+
+        #sortable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 250px;
+        }
+
+        #sortable li {
+            margin: 0 3px 3px 3px;
+            padding: 1em;
+            padding-left: 1.5em;
+            font-size: 1.4em;
+            height: 10px;
+        }
+
+        #sortable li span {
+            position: absolute;
+            margin-left: -1.3em;
+        }
+    </style>
+
+
+    <script src="../Generator/jquery-ui-1.12.1.custom/jquery-3.2.1.min.js""></script>
+    <script src=" ../Generator/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="../Generator/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#sortable").sortable();
+            // $("#sortable").disableSelection();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="topBar" id="topBar">
+        <button type="button" class="btn btn-dark btn-sm" onclick="initiateRightPanel()">
+            Lekcja
+        </button>
+        <button type="button" class="btn btn-dark btn-sm" onclick="myAlert()">
+            Ekrany
+        </button>
+
+
+    </div>
+    
+
+        <div class= "rightBar" > 
+
+    <ul id="sortable" class="ui-sortable">
+            
+            <!-- <li class="ui-state-default ui-sortable-handle" ><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+            <li class="ui-state-default ui-sortable-handle"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+            <li class="ui-state-default ui-sortable-handle"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+            <li class="ui-state-default ui-sortable-handle"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+            <li class="ui-state-default ui-sortable-handle" ><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+            <li class="ui-state-default ui-sortable-handle" ><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+            <li class="ui-state-default ui-sortable-handle"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li> -->
+            
+        </ul>
+    </div>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function myAlert() {
+            alert("alert");
+        }
+
+        function initiateRightPanel() {
+
+        }
+    </script>
+
+</body>
+
+</html>
